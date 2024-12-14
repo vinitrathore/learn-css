@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;
+        position: relative;
+      }
+
+      .card-content {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(242, 216, 242);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border-radius: 20px;
+      }
+      .card-content::before {
+        height: 45%;
+        width: 100%;
+        background-color: purple;
+        content: "";
+        position: absolute;
+        top: 0;
+        border-radius: 20px;
+      }
+      .image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: purple;
+        border: 3px solid purple;
+        z-index: 100;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: aqua;
+      }
+      .name-profession {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* background-color: green; */
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* background-color: green; */
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .profession {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* background-color: green; */
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: 100px;
+      }
+      .btn {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .btns {
+        border: none;
+        height: 100%;
+        width: 80px;
+        background-color: purple;
+        border-radius: 15px;
+        font-size: 18;
+        font-weight: 600;
+        color: white;
+      }
+      .icon {
+        color: white;
+      }
+      .container {
+        max-width: 1120px;
+        padding: 0 40px;
+      }
+      .content {
+        margin: 40px 0;
+        overflow: hidden;
+      }
+      .pagination{
+        color: gray;
+      }
+      span.swiper-pagination-bullet{
+        height: 5px;
+        width: 30px;
+        border-radius: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container swiper">
+      <div class="content">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div><div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div><div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div><div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div><div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div><div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div><div class="card swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="/vinit121.png" alt="vinit121" />
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+              </div>
+              <!-- <div class="name-profession"> -->
+              <span class="name">Vinit Rathore</span
+              ><span class="profession">Software Engineer</span>
+              <!-- </div> -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="btn">
+                <button class="about-me btns">About Me</button>
+                <button class="hire-me btns">Hire Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const swiper = new Swiper(".content", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      slidesPerView:3,
+      slidesPerGroup:3,
+      spaceBetween: 25,
+
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+</html>
