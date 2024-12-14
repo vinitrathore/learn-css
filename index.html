@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>Document</title>
+  <style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container{
+  max-width: 1120px;
+  padding: 40px 0;
+
+}
+.swiper-content{
+  margin: 0 45px;
+  overflow: hidden;
+}
+.card{
+  height: 200px;
+  width: 200px;
+  background-color: green;
+}
+  </style>
+</head>
+<body>
+  <div class="swiper-container swiper">
+    <div class="swiper-content">
+
+  
+    <div class="swiper-wrapper">
+      <div class="swiper-slide card">Slide 1</div>
+      <div class="swiper-slide card">Slide 2</div>
+      <div class="swiper-slide card">Slide 3</div>
+      <div class="swiper-slide card">Slide 4</div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+</div>
+</body>
+<script>
+  const swiper = new Swiper('.swiper-content', {
+    slidesPerView: 3,
+      spaceBetween: 25,
+      slidesPerGroup: 1,
+      loopFillWithBlank: true,
+      centerSlide: true,
+      fade: true,
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 2,
+        },
+        950: {
+          slidesPerView: 3,
+        },
+      },
+    });
+</script>
+</html>
