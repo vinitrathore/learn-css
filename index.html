@@ -31,11 +31,100 @@ body{
   margin: 0 45px;
   overflow: hidden;
 }
+
+
+
+
+
+
+
+
 .card{
-  height: 200px;
+  height: 350px;
   width: 200px;
-  background-color: green;
+  background-color: rgb(168, 243, 168);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  flex-direction: column;
 }
+.top{
+  height: 50%;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 20px;
+  position: relative;
+  flex-direction: column;
+}
+.overlay::before,.overlay::after{
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  right: 0;
+  bottom: -20px;
+
+
+}
+.overlay::after{
+  border-radius: 0 20px 0 0;
+  background-color: rgb(168, 243, 168);
+}
+.image{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border:2px solid rgb(2, 45, 2);
+  padding: 2px;
+}
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+}
+.bottom{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.name,.disc{
+  color: green;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.btn{
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 90px;
+  background-color: green;
+  color: white;
+  transition: .5s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn:hover{
+  background-color: rgb(168, 243, 168);
+  border: 2px solid green;
+  color: green;
+}
+
+
+
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -44,9 +133,129 @@ body{
 
   
     <div class="swiper-wrapper">
-      <div class="swiper-slide card">Slide 1</div>
-      <div class="swiper-slide card">Slide 2</div>
-      <div class="swiper-slide card">Slide 3</div>
+      <div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div><div class="swiper-slide card">
+        <div class="top">
+          <div class="image"><img src="/vinit121.png" alt=""></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="name">Vinit Rathore</h2>
+          <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima iste itaque perferendis praesentium doloribus placeat. Vel deleniti totam inventore?</p>
+          <button class="btn">View More</button>
+        </div>
+      </div>
+     
       <div class="swiper-slide card">Slide 4</div>
 
     </div>
